@@ -3,9 +3,9 @@
 Gem::Specification.new do |gem|
   gem.authors       = ["David Calavera"]
   gem.email         = ["david.calavera@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = "Continuous VM provisioning"
+  gem.summary       = gem.description
+  gem.homepage      = "http://github.com/calavera/vm-watcher"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
@@ -15,4 +15,5 @@ Gem::Specification.new do |gem|
   gem.version       = '0.1.0'
 
   gem.add_runtime_dependency('vagrant')
+  gem.add_development_dependency('rake')
 end
