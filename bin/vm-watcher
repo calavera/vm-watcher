@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+$stdout.sync = $stderr.sync = true
+
+require 'vm-watcher'
+
+Vm::Watcher.init(ARGV)
